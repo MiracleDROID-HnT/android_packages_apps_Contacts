@@ -973,7 +973,7 @@ public class CustomContactListFilterActivity extends Activity implements
 
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
-            return new AlertDialog.Builder(getActivity(), getTheme())
+            return new AlertDialog.Builder(getActivity(), R.style.ContactsAlertDialogTheme)
                     .setMessage(R.string.leave_customize_confirmation_dialog_message)
                     .setNegativeButton(android.R.string.no, null)
                     .setPositiveButton(android.R.string.yes, this)
